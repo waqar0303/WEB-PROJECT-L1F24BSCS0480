@@ -1,0 +1,117 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5E9D3;
+    color: #38251D;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #153D32;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    color: #C69A4A;
+    font-size: 32px;
+}
+
+nav {
+    margin-top: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #C69A4A;
+}
+
+.menu-heading {
+    text-align: center;
+    padding: 45px 15px 25px;
+}
+
+.menu-heading h2 {
+    font-size: 36px;
+    color: #153D32;
+}
+
+.menu-section {
+    padding: 25px 7%;
+}
+
+.menu-section h2 {
+    color: #153D32;
+    margin-bottom: 18px;
+    border-bottom: 2px solid #C69A4A;
+    padding-bottom: 8px;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.menu-card {
+    background-color: white;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+}
+
+.menu-card h3 {
+    color: #153D32;
+    margin-bottom: 8px;
+}
+
+.menu-card p {
+    margin-bottom: 12px;
+}
+
+.menu-card strong {
+    color: #9B702D;
+}
+
+footer {
+    background-color: #153D32;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 35px;
+}
+
+@media (max-width: 900px) {
+    .menu-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .menu-items {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+}

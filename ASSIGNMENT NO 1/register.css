@@ -1,0 +1,119 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5E9D3;
+    color: #38251D;
+}
+
+header {
+    background-color: #153D32;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    color: #C69A4A;
+}
+
+nav {
+    margin-top: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #C69A4A;
+}
+
+.register-container {
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 15px;
+}
+
+.register-form {
+    background-color: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.register-form h2 {
+    color: #153D32;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.register-form p {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.register-form label {
+    display: block;
+    margin: 12px 0 5px;
+    font-weight: bold;
+}
+
+.register-form input:not([type="checkbox"]) {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.register-form .terms {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+}
+
+.register-form button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 20px;
+    background-color: #153D32;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.register-form button:hover {
+    background-color: #245747;
+}
+
+footer {
+    background-color: #153D32;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+@media (max-width: 550px) {
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .register-form {
+        padding: 22px;
+    }
+}
