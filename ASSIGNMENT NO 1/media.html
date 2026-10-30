@@ -4,112 +4,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Menu | Chai Junction</title>
+    <title>Chai Junction | Menu</title>
     <link rel="stylesheet" href="media.css">
+    <script src="contact.js" defer></script>
 </head>
 <body>
 
-<header>
-    <h1>Chai Junction</h1>
-    <p>Your Daily Dose of Chai</p>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="media.html">Menu</a>
-        <a href="register.html">Register</a>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+    <header>
+        <h1>Chai Junction</h1>
+        <p>Fresh Chai, Coffee & Delicious Snacks</p>
 
-<main>
-    <section class="menu-heading">
-        <h2>Our Menu</h2>
-        <p>Fresh chai, coffee and delicious snacks.</p>
-    </section>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="media.html">Menu</a>
+            <a href="register.html">Register</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-    <section class="menu-section">
-        <h2>Chai</h2>
-        <div class="menu-items">
-            <div class="menu-card">
-                <h3>Doodh Patti</h3>
-                <p>Traditional creamy milk tea.</p>
-                <strong>PKR 180</strong>
-            </div>
-            <div class="menu-card">
-                <h3>Karak Chai</h3>
-                <p>Strong and flavorful chai.</p>
-                <strong>PKR 200</strong>
-            </div>
-            <div class="menu-card">
-                <h3>Elaichi Chai</h3>
-                <p>Chai with a cardamom aroma.</p>
-                <strong>PKR 220</strong>
-            </div>
-            <div class="menu-card">
-                <h3>Green Tea</h3>
-                <p>A light and refreshing drink.</p>
-                <strong>PKR 150</strong>
-            </div>
-        </div>
-    </section>
+    <main>
+        <section class="menu-section">
+            <h2>Our Menu</h2>
+            <p class="intro">Choose your favourite items and add them to your cart.</p>
 
-    <section class="menu-section">
-        <h2>Coffee</h2>
-        <div class="menu-items">
-            <div class="menu-card">
-                <h3>Cappuccino</h3>
-                <p>Coffee topped with creamy foam.</p>
-                <strong>PKR 350</strong>
-            </div>
-            <div class="menu-card">
-                <h3>Café Latte</h3>
-                <p>Smooth coffee with steamed milk.</p>
-                <strong>PKR 380</strong>
-            </div>
-            <div class="menu-card">
-                <h3>Americano</h3>
-                <p>Classic black coffee.</p>
-                <strong>PKR 300</strong>
-            </div>
-            <div class="menu-card">
-                <h3>Iced Coffee</h3>
-                <p>Chilled coffee for a refreshing break.</p>
-                <strong>PKR 400</strong>
-            </div>
-        </div>
-    </section>
+            <div class="menu-grid">
 
-    <section class="menu-section">
-        <h2>Snacks</h2>
-        <div class="menu-items">
-            <div class="menu-card">
-                <h3>Samosa</h3>
-                <p>Crispy and delicious snack.</p>
-                <strong>PKR 80</strong>
-            </div>
-            <div class="menu-card">
-                <h3>French Fries</h3>
-                <p>Golden and crispy fries.</p>
-                <strong>PKR 200</strong>
-            </div>
-            <div class="menu-card">
-                <h3>Chicken Sandwich</h3>
-                <p>A tasty sandwich with chicken filling.</p>
-                <strong>PKR 300</strong>
-            </div>
-            <div class="menu-card">
-                <h3>Bun Maska</h3>
-                <p>Soft bun served with butter.</p>
-                <strong>PKR 150</strong>
-            </div>
-        </div>
-    </section>
-</main>
+                <div class="menu-card">
+                    <div class="food-icon">☕</div>
+                    <h3>Special Chai</h3>
+                    <p>Traditional Pakistani milk tea.</p>
+                    <p class="price">Rs. 150</p>
+                    <button type="button" class="add-btn"
+                        data-name="Special Chai" data-price="150">
+                        Add to Cart
+                    </button>
+                </div>
 
-<footer>
-    <p>&copy; 2026 Chai Junction. All rights reserved.</p>
-</footer>
+                <div class="menu-card">
+                    <div class="food-icon">🍵</div>
+                    <h3>Green Tea</h3>
+                    <p>Light and refreshing green tea.</p>
+                    <p class="price">Rs. 120</p>
+                    <button type="button" class="add-btn"
+                        data-name="Green Tea" data-price="120">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="menu-card">
+                    <div class="food-icon">☕</div>
+                    <h3>Hot Coffee</h3>
+                    <p>Freshly prepared hot coffee.</p>
+                    <p class="price">Rs. 250</p>
+                    <button type="button" class="add-btn"
+                        data-name="Hot Coffee" data-price="250">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="menu-card">
+                    <div class="food-icon">🥪</div>
+                    <h3>Club Sandwich</h3>
+                    <p>A tasty sandwich for your break.</p>
+                    <p class="price">Rs. 350</p>
+                    <button type="button" class="add-btn"
+                        data-name="Club Sandwich" data-price="350">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="menu-card">
+                    <div class="food-icon">🍔</div>
+                    <h3>Zinger Burger</h3>
+                    <p>Crispy chicken burger.</p>
+                    <p class="price">Rs. 450</p>
+                    <button type="button" class="add-btn"
+                        data-name="Zinger Burger" data-price="450">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="menu-card">
+                    <div class="food-icon">🍟</div>
+                    <h3>French Fries</h3>
+                    <p>Golden and crispy fries.</p>
+                    <p class="price">Rs. 200</p>
+                    <button type="button" class="add-btn"
+                        data-name="French Fries" data-price="200">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="cart-section" id="cart">
+            <h2>Your Shopping Cart</h2>
+
+            <p id="emptyCart">Your cart is empty. Add an item from the menu.</p>
+
+            <div id="cartItems"></div>
+
+            <h3 id="cartTotal">Total: Rs. 0</h3>
+
+            <form id="orderForm">
+                <h3>Customer Details</h3>
+
+                <label for="customerName">Full Name</label>
+                <input type="text" id="customerName"
+                    placeholder="Enter your name" required>
+
+                <label for="customerPhone">Phone Number</label>
+                <input type="tel" id="customerPhone"
+                    placeholder="03XXXXXXXXX"
+                    pattern="03[0-9]{9}" required>
+
+                <label for="orderType">Order Type</label>
+                <select id="orderType" required>
+                    <option value="Pickup">Pickup</option>
+                    <option value="Delivery">Delivery</option>
+                </select>
+
+                <div id="addressBox" class="hidden">
+                    <label for="customerAddress">Delivery Address</label>
+                    <textarea id="customerAddress"
+                        placeholder="Enter your delivery address"></textarea>
+                </div>
+
+                <label for="instructions">Special Instructions (Optional)</label>
+                <textarea id="instructions"
+                    placeholder="Any special request?"></textarea>
+
+                <button type="submit" id="placeOrderBtn">
+                    Place Order
+                </button>
+            </form>
+
+            <div id="orderMessage" role="status" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Chai Junction. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
