@@ -1,0 +1,115 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5E9D3;
+    color: #38251D;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #153D32;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    color: #C69A4A;
+}
+
+nav {
+    margin-top: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #C69A4A;
+}
+
+.intro {
+    text-align: center;
+    padding: 45px 15px 25px;
+}
+
+.intro h2 {
+    color: #153D32;
+    font-size: 36px;
+}
+
+.services {
+    padding: 25px 7%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.service-card h3 {
+    color: #153D32;
+    margin-bottom: 10px;
+}
+
+.booking {
+    text-align: center;
+    padding: 35px 15px 50px;
+}
+
+.booking h2 {
+    color: #153D32;
+    margin-bottom: 10px;
+}
+
+.booking a {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 25px;
+    background-color: #153D32;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.booking a:hover {
+    background-color: #245747;
+}
+
+footer {
+    background-color: #153D32;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+@media (max-width: 600px) {
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+}
